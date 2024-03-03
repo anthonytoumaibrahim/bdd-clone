@@ -130,14 +130,23 @@ header .menu-link:hover {
 header .menu a i {
   font-size: 10px;
 }
-.hero {
-  background-image: url("../images/hero-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.hero-glide {
   min-height: 1024px;
   position: relative;
   color: #fff;
+}
+.hero-glide .glide__slides {
+  display: flex;
+  flex-direction: row;
+  max-height: 1024px;
+  overflow: hidden;
+  list-style-type: none;
+  padding: 0;
+}
+.hero-glide .glide__slides img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .overlay {
   width: 100%;
@@ -146,12 +155,18 @@ header .menu a i {
   position: absolute;
   top: 0;
   left: 0;
-}
-.hero h1 {
   z-index: 1;
+}
+.hero-glide h1 {
+  z-index: 2;
   font-size: 50px;
   line-height: 1.3em;
   text-align: center;
+  position: absolute;
+  translate: 0 -50%;
+  top: 50%;
+  left: 0;
+  width: 100%;
 }
 .foundations {
   display: flex;

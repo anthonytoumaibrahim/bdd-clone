@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./assets/styles/animations.css" />
     <link rel="stylesheet" href="./assets/styles/index.css" />
     <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="./assets/js/index.js" defer></script>
   </head>
   <body>
@@ -44,13 +45,39 @@
     </header>
     <div id="header-scroll"></div>
 
-    <section class="hero flex center">
+    <div class="hero-glide">
       <div class="overlay"></div>
       <h1>
         A unique digital cluster<br />
         designed for a community of businesses and innovators
       </h1>
-    </section>
+
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide1.jpg" alt="Slide 1" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide2.jpg" alt="Slide 2" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide3.jpg" alt="Slide 3" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide4.jpg" alt="Slide 4" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide5.jpg" alt="Slide 5" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide6.jpg" alt="Slide 6" />
+          </li>
+          <li class="glide__slide">
+            <img src="./assets/images/slides/slide7.jpg" alt="Slide 7" />
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <section class="text-center padding-y bg-light">
       <h2 class="margin-bottom">BDD IS BUILT ON FIVE SOLID FOUNDATIONS</h2>

@@ -1,8 +1,14 @@
 const siteHeader = document.getElementById("site-header");
 const headerScroll = document.getElementById("header-scroll");
 const headerLogo = document.querySelector("#site-header .logo");
-const hero = document.querySelector(".hero");
+const hero = document.querySelector(".hero-glide");
 const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+// GlideJS
+new Glide(".hero-glide", {
+  autoplay: 3000,
+  hoverpause: false,
+}).mount();
 
 // Using an IntersectionObserver to make the header fixed after scroll
 const headerObserver = new IntersectionObserver(
