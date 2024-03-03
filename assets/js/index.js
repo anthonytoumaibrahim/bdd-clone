@@ -15,7 +15,15 @@ new Glide(".hero-glide", {
 new Glide(".videos-glide", {
   type: "carousel",
   perView: 3,
-  autoplay: 3000,
+  // autoplay: 3000,
+  breakpoints: {
+    1024: {
+      perView: 2,
+    },
+    767: {
+      perView: 1,
+    },
+  },
 }).mount();
 
 // Using an IntersectionObserver to make the header fixed after scroll
