@@ -6,6 +6,7 @@ const scrollToTopButton = document.querySelector(".scroll-to-top");
 
 // GlideJS
 new Glide(".hero-glide", {
+  type: "slider",
   autoplay: 3000,
   hoverpause: false,
 }).mount();
