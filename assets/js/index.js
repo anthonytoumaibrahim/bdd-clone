@@ -15,12 +15,22 @@ new Glide(".hero-glide", {
 new Glide(".videos-glide", {
   type: "carousel",
   perView: 3,
-  // autoplay: 3000,
   breakpoints: {
     1024: {
       perView: 2,
     },
     767: {
+      perView: 1,
+    },
+  },
+}).mount();
+
+// Articles Carousel
+new Glide(".trending-articles-glide", {
+  type: "carousel",
+  perView: 3,
+  breakpoints: {
+    1024: {
       perView: 1,
     },
   },

@@ -357,38 +357,54 @@ header .menu a i {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.trending-articles {
+.trending .container {
+  overflow: hidden;
+}
+.trending-articles-glide {
   display: flex;
-  gap: 30px;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
   position: relative;
 }
-.trending-chevron {
+.trending-articles-glide .glide__track {
+  width: 100%;
+}
+.trending-articles-glide .glide__slides {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+.trending-articles-glide .glide__arrows button {
+  border: none;
   position: absolute;
   background-color: var(--primary-color);
   color: var(--light-color);
+  width: 30px;
+  height: 30px;
   font-size: 20px;
-  padding: 2px 10px;
   top: 50%;
   translate: 0 -50%;
   cursor: pointer;
 }
-.chevron-left {
+.trending-articles-glide .glide__arrow--left {
   left: 0;
 }
-.chevron-right {
+.trending-articles-glide .glide__arrow--right {
   right: 0;
 }
-.trending-article {
-  width: 33.333333%;
+.trending-articles-glide .glide__slide {
+  display: block;
+  width: 100%;
   background-color: #fff;
   text-align: left;
 }
-.trending-article img {
+.trending-articles-glide .glide__slide img {
   width: 100%;
   height: 250px;
   object-fit: cover;
 }
-.trending-article h3 {
+.trending-articles-glide .glide__slide h3 {
   padding: 30px;
   text-transform: uppercase;
 }
@@ -406,14 +422,12 @@ header .menu a i {
   align-items: center;
   gap: 20px;
 }
-.more-articles-bullets,
 .glide__bullets {
   display: flex;
   gap: 13px;
   align-items: center;
   justify-content: center;
 }
-.more-articles-bullets span,
 .glide__bullets button {
   width: 6px;
   height: 6px;
@@ -422,7 +436,7 @@ header .menu a i {
   border: none;
   cursor: pointer;
 }
-.more-articles-bullets span.active,
+.glide__bullets button:hover,
 .glide__bullet--active {
   background-color: #212121 !important;
 }
