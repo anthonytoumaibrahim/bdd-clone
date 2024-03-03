@@ -1,0 +1,16 @@
+/* https://github.com/animate-css/animate.css/ */
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation: slideInDown;
+  animation-duration: 0.25s;
+}
