@@ -8,7 +8,7 @@
   src: url("../webfonts/TheMixSemiBold-Plain.woff2") format("woff2");
 }
 @font-face {
-  font-family: "TheMixBlack-Plain";
+  font-family: "TheMixSemiBold-Plain";
   font-weight: 700;
   src: url("../webfonts/TheMixBlack-Plain.woff2") format("woff2");
 }
